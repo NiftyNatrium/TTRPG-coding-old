@@ -7,19 +7,19 @@ hindrancePoints=0 #determines how much extra points for other catergories, depen
 edgePoints=1 #normally 0 but assumed to be a human will change later maybe
 
 attributes= { #these are the attributes which allow derived traits, determine skills, and enable certain edges to be taken
-  "Agility" : 4
-  "Smarts" : 4
-  "Spirit" : 4
-  "Strength" : 4
+  "Agility" : 4,
+  "Smarts" : 4,
+  "Spirit" : 4,
+  "Strength" : 4,
   "Vigor" : 4
 }
 
 skills= { #these are the skills
-  "Athletics" : 4
-  "Boating" : 2
-  "Common Knowledge" : 4
-  "Driving" : 2
-  "Performance" : 2
+  "Athletics" : 4,
+  "Boating" : 2,
+  "Common Knowledge" : 4,
+  "Driving" : 2,
+  "Performance" : 2,
   "Persuasion" : 4
   #need to add the rest when I have the book  
 }
