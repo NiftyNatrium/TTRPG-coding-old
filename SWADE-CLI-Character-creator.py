@@ -39,7 +39,7 @@ match decision:
       # Get user descision on what to increase
       print() # Just give us some visual separation for each iteration
       # Do a confusing looking print statement for current allocations LoL
-      print(', '.join([f"{key}: {attributes[key]}" for key in attributes]))
+      print(', '.join([f"{key}: d{attributes[key]}" for key in attributes]))
  	  # Show how many points are left to spend
       print(f"You have {attributePoints} point{'' if attributePoints == 1 else 's'} left to spend")
       userAttributeInc = input("Choose to increase: ")
@@ -52,7 +52,7 @@ match decision:
         print("Pick a different attribute!")
 
     # Print all the attributes stored in the dict
-    print("Your atttributes are:")
+    print(f"{name}'s atttributes are:", sep="")
     for key in attributes:
       print(f'\t{key}: d{attributes[key]}')
       #so we need a d before the key.
