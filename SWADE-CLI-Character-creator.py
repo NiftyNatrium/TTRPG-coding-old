@@ -4,7 +4,7 @@
 attributePoints=5 #points to spend on attributes
 skillPoints=12 #how many points to spend on skills
 hindrancePoints=0 #determines how much extra points for other catergories, dependant on how many hindrances chosen, max of 4.
-BedgePoints=1 #normally 0 but assumed to be a human will change later maybe
+edgePoints=1 #normally 0 but assumed to be a human will change later maybe
 
 attributes= { #these are the attributes which allow derived traits, determine skills, and enable certain edges to be taken
   "Agility" : 4,
@@ -14,7 +14,7 @@ attributes= { #these are the attributes which allow derived traits, determine sk
   "Vigor" : 4
 }
 
-skills= { #these are the skills
+skills= { #these are the skills, core skills get a value of 4 and others have a value of 2
   "Athletics" : 4,
   "Boating" : 2,
   "Common Knowledge" : 4,
@@ -51,9 +51,10 @@ match decision:
       else:
         print("Pick a different attribute!")
 
-    # Print all Athe attributes stored in the dict
+    # Print all the attributes stored in the dict
     print("Your atttributes are:")
     for key in attributes:
-      print(f'\t{key}: {attributes[key]}')
+      print(f'\t{key}: d{attributes[key]}')
+      #so we need a d before the key.
 
 
