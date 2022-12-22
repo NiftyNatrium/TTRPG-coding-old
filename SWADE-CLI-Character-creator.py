@@ -15,13 +15,32 @@ attributes= { #these are the attributes which allow derived traits, determine sk
 }
 
 skills= { #these are the skills, core skills get a value of 4 and others have a value of 2
+  "Academics" : 2,
   "Athletics" : 4,
+  "Battle" : 2,
   "Boating" : 2,
   "Common Knowledge" : 4,
   "Driving" : 2,
+  "Electronics" : 2,
+  "Fighting" : 2,
+  "Gambling" : 2,
+  "Hacking" : 2,
+  "Healing" : 2,
+  "Intimidation" : 2,
+  "Notice" : 4,
+  "Occult" : 2,
   "Performance" : 2,
-  "Persuasion" : 4
-  #need to add the rest when I have the book
+  "Persuasion" : 4,
+  "Piloting" : 2,
+  "Repair" : 2,
+  "Research" : 2,
+  "Riding" : 2,
+  "Science" : 2,
+  "Shooting" : 2,
+  "Stealth" : 4,
+  "Survival" : 2,
+  "Taunt" : 2,
+  "Thievery" : 2
 }
 
 #naming character
@@ -56,5 +75,10 @@ match decision:
     for key in attributes:
       print(f'\t{key}: d{attributes[key]}')
       #so we need a d before the key.
-
+    print("\nSkills, Hindrances, Edges, or Inventory")
+    decision=input("Where to now?") #********************************************This will not work*************** Needs to be fixed. Allow the match to be used multiple times basically.
+  case "Skills": #skill raises here
+    while skillPoints>0 #loops till enough skill points are spent
+      
+    
 
